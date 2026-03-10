@@ -1,369 +1,341 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MyDreem</title>
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab MST — Materials Science & Technology</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-    <header id="header">
-        <nav class="navbar navbar-expand-lg bg-white main-nav">
-            <div class="container-fluid  px-5">
-                <a class="navbar-brand" href="#">MD<span class="text-primary">ZAID</span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto text-center">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#our-team">Our Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+  <!-- Ambient Orbs -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
 
-    <section id="home" class="home">
-        <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="banner.jpg" class="d-block w-100 img-fluid" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>MY Life MY Rule</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="banner1.jpg" class="d-block w-100 img-fluid" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Life is Beautyfull</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="banner3.jpg" class="d-block w-100 img-fluid" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Everything you can do it</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+  <!-- ── Navigation ── -->
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Lab<span>MST</span></a>
+      <ul class="nav-links">
+        <li><a href="#experiments">Experiments</a></li>
+        <li><a href="#equipment">Equipment</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#terminal">Logs</a></li>
+      </ul>
+      <span class="nav-badge">Status: Online</span>
+    </div>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section class="hero">
+    <div class="wrapper">
+      <p class="hero-label">Materials Science &amp; Technology Laboratory</p>
+      <h1>
+        <div>Pushing the</div>
+        <div class="line-accent">Boundaries</div>
+        <div class="line-highlight">of Matter.</div>
+      </h1>
+      <p class="hero-desc">
+        Lab MST is a cutting-edge research facility dedicated to the exploration,
+        synthesis, and characterization of advanced materials. We investigate nanoscale
+        structures, composite alloys, and next-generation semiconductors to solve
+        real-world engineering challenges.
+      </p>
+      <div class="hero-actions">
+        <a href="#experiments" class="btn btn-primary">
+          &#x25B6; View Experiments
+        </a>
+        <a href="#team" class="btn btn-outline">
+          Meet the Team
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Stats Bar ── -->
+  <div class="wrapper">
+    <div class="stats-bar">
+      <div class="stat-item fade-in">
+        <div class="stat-num">42<span>+</span></div>
+        <div class="stat-label">Active Experiments</div>
+      </div>
+      <div class="stat-item fade-in">
+        <div class="stat-num">18<span>k</span></div>
+        <div class="stat-label">Data Points Logged</div>
+      </div>
+      <div class="stat-item fade-in">
+        <div class="stat-num">7</div>
+        <div class="stat-label">Research Tracks</div>
+      </div>
+      <div class="stat-item fade-in">
+        <div class="stat-num">99<span>%</span></div>
+        <div class="stat-label">Instrument Uptime</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Experiments ── -->
+  <section class="experiments" id="experiments">
+    <div class="wrapper">
+      <div class="section-header">
+        <span class="section-tag">01 / Research</span>
+        <h2 class="section-title">Current Experiments</h2>
+      </div>
+
+      <div class="exp-grid">
+
+        <div class="exp-card">
+          <div class="exp-index">EXP-001</div>
+          <span class="exp-icon">⚛️</span>
+          <h3 class="exp-title">Nanoparticle Synthesis</h3>
+          <p class="exp-desc">
+            Controlled synthesis of iron-oxide nanoparticles using co-precipitation
+            methods. Investigating size-dependent magnetic properties at room temperature.
+          </p>
+          <div class="exp-footer">
+            <span class="exp-status status-active">Active</span>
+            <span class="exp-arrow">↗</span>
+          </div>
         </div>
-    </section>
 
-    <section id="about" class="about p-5">
-        <div class="container">
-            <div class="row mb-5">
-                <h2 class="text-center">About<span class="text-primary"> me</span></h2>
-                <hr class="w-25 m-auto">
-            </div>
-            <div class="row">
-                <div class="col-sm-12 col-lg-6 col-md-6">
-                    <h3>What do you <span class="text-primary">want to know?</span></h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus soluta quisquam.
-                        Amet, ab et. Est itaque perspiciatis fuga aut illum harum nulla dolorum similique odit, nemo
-                        aspernatur numquam ducimus</p>
-                    <div class="btn">
-                        <button type="button" class="btn btn-outline-light fw-bold text-black mb-5">More about
-                            me</button>
-                    </div>
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    MY Hobbies
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    MY Qualification
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    MY Dreams
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-lg-6 col-md-6">
-                    <div class="image-box m-auto my-5 text-lg-end text-sm-center">
-                        <img src="s4.jpg" alt="img" class="img-fluid">
-                    </div>
-                </div>
-            </div>
+        <div class="exp-card">
+          <div class="exp-index">EXP-002</div>
+          <span class="exp-icon">🔬</span>
+          <h3 class="exp-title">Thin Film Deposition</h3>
+          <p class="exp-desc">
+            Sputtering-based deposition of TiN coatings on carbide substrates.
+            Examining hardness and thermal stability under cyclic stress loads.
+          </p>
+          <div class="exp-footer">
+            <span class="exp-status status-active">Active</span>
+            <span class="exp-arrow">↗</span>
+          </div>
         </div>
-    </section>
 
-    <section id="services" class="service p-5">
-        <div class="container">
-            <div class="row mb-5">
-                <h2 class="text-center">Our<span class="text-primary"> Services</span></h2>
-                <hr class="w-25 m-auto">
-            </div>
-            <div class="row first-row">
-                <div class="col-lg-4 col-sm-12 col-md-4">
-                    <div class="card-body">
-                        <i class="fa-solid fa-gift fa-beat-fade"></i>
-                        <h5 class="card-title">Graphics Design</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Book now!</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-12 col-md-4">
-                    <div class="card-body   bg-primary">
-                        <i class="fa-solid fa-gift fa-beat-fade text-white"></i>
-                        <h5 class="card-title">Web Development</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary bg-white text-black">Book now!</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-12 col-md-4">
-                    <div class="card-body ">
-                        <i <i class="fa-solid fa-gift fa-beat-fade"></i>
-                        <h5 class="card-title">App Development</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Book now!</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-5 second-row">
-                <div class="col-4">
-                    <div class="card-body">
-                        <i class="fa-solid fa-gift fa-beat-fade"></i>
-                        <h5 class="card-title">SEO</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Book now!</a>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card-body bg-primary ">
-                        <i class="fa-solid fa-gift fa-beat-fade text-white"></i>
-                        <h5 class="card-title">Digital Marketing</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary bg-white text-black">Book now!</a>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card-body ">
-                        <i class="fa-solid fa-gift fa-beat-fade"></i>
-                        <h5 class="card-title">Web Design</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Book now!</a>
-                    </div>
-                </div>
-            </div>
+        <div class="exp-card">
+          <div class="exp-index">EXP-003</div>
+          <span class="exp-icon">💎</span>
+          <h3 class="exp-title">Polymer Composites</h3>
+          <p class="exp-desc">
+            PEEK-carbon fiber composite panels cured under variable pressure. Mapping
+            interlaminar shear strength using acoustic emission sensors.
+          </p>
+          <div class="exp-footer">
+            <span class="exp-status status-pending">In Review</span>
+            <span class="exp-arrow">↗</span>
+          </div>
         </div>
+
+        <div class="exp-card">
+          <div class="exp-index">EXP-004</div>
+          <span class="exp-icon">🧬</span>
+          <h3 class="exp-title">Biomaterial Scaffolds</h3>
+          <p class="exp-desc">
+            Hydrogel-based scaffolds with tunable porosity for cell adhesion studies.
+            Evaluating biocompatibility in simulated physiological conditions.
+          </p>
+          <div class="exp-footer">
+            <span class="exp-status status-active">Active</span>
+            <span class="exp-arrow">↗</span>
+          </div>
         </div>
-    </section>
 
-    <section id="our-team" class="our-team p-5">
-        <div class="container main-team">
-            <div class="row mb-5">
-                <h2 class="text-center">Our<span class="text-primary"> Team</span></h2>
-                <hr class="w-25 m-auto">
-            </div>
-            <div class="row text-center ">
-                <div class="col-lg-4 col-md-4 col-sm-12 p-0">
-                    <div class="card m-3">
-                        <div class="card-body">
-                            <img src="team1.jpg" class="card-img-top img-fluid" alt="...">
-                          <h5 class="card-title mt-4">Card title</h5>
-                          <p class="card-text">Front end Developer</p>
-                          <a href="#" class="btn btn-primary">Read more</a>
-                        </div>
-                      </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-12 p-0">
-                    <div class="card m-3">
-                        <div class="card-body">
-                            <img src="team1.jpg" class="card-img-top img-fluid" alt="...">
-                            <h5 class="card-title mt-4">Keren D'souza</h5>
-                          <p class="card-text">App Developer</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-12 p-0 ">
-                    <div class="card m-3">
-                        <div class="card-body">
-                            <img src="team1.jpg" class="card-img-top img-fluid" alt="...">
-                            <h5 class="card-title mt-4">Kristina</h5>
-                          <p class="card-text">Full stack web Deverloper</p>
-                          <a href="#" class="btn btn-primary">Read more</a>
-                        </div>
-                      </div>
-                </div>
-            </div>
+        <div class="exp-card">
+          <div class="exp-index">EXP-005</div>
+          <span class="exp-icon">⚡</span>
+          <h3 class="exp-title">Semiconductor Doping</h3>
+          <p class="exp-desc">
+            Precision ion implantation of phosphorus into silicon wafers. Measuring
+            carrier mobility and resistivity via Hall-effect probing.
+          </p>
+          <div class="exp-footer">
+            <span class="exp-status status-draft">Draft</span>
+            <span class="exp-arrow">↗</span>
+          </div>
         </div>
-    </section>
 
-    <section id="contact" class="contact p-5">
-        <div class="container main-contact">
-            <div class="row mb-5">
-                <h2 class="text-center">Feel free<span class="text-primary"> to connect</span></h2>
-                <hr class="w-25 m-auto">
-            </div>
-            <div class="row mb-5">
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                <div class="form-box">
-                    <form class="row g-3">
-                        <div class="col-md-6">
-                          <label for="inputEmail4" class="form-label">Email</label>
-                          <input type="email" class="form-control" id="inputEmail4" placeholder="Enter email">
-                        </div>
-                        <div class="col-md-6">
-                          <label for="inputPassword4" class="form-label">Password</label>
-                          <input type="password" class="form-control" id="inputPassword4" placeholder="Enter password">
-                        </div>
-                        <div class="col-12">
-                          <label for="inputAddress" class="form-label">Address</label>
-                          <input type="text" class="form-control" id="inputAddress" placeholder="vill:-chakandra, post:-Chewar">
-                        </div>
-                        <div class="col-12">
-                          <label for="inputAddress2" class="form-label">Current address</label>
-                          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                        </div>
-                        <div class="col-md-6">
-                          <label for="inputCity" class="form-label">City</label>
-                          <input type="text" class="form-control" id="inputCity">
-                        </div>
-                        <div class="col-md-4">
-                          <label for="inputState" class="form-label">State</label>
-                          <select id="inputState" class="form-select">
-                            <option selected>Choose...</option>
-                            <option>Bihar</option>
-                            <option>Bangal</option>
-                            <option>Mumbai</option>
-                          </select>
-                        </div>
-                        <div class="col-md-2">
-                          <label for="inputZip" class="form-label">Pic code</label>
-                          <input type="text" class="form-control" id="pic-code">
-                        </div>
-                        <div class="col-12">
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">
-                              Check me out
-                            </label>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <button type="submit" class="btn btn-primary">Submit</button>
-                        </div>
-                      </form>
-                </div>
-              </div>
-
-              <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                 <div class="img-box text-center">
-                    <img src="s6.jpg" alt="image" class="img-fluid m-auto my-5 p-2 border border-1">
-                 </div>
-              </div>
-            </div>
+        <div class="exp-card">
+          <div class="exp-index">EXP-006</div>
+          <span class="exp-icon">🌡️</span>
+          <h3 class="exp-title">Thermal Barrier Coatings</h3>
+          <p class="exp-desc">
+            YSZ coatings applied to nickel superalloy turbine blades. Performance
+            tested in a high-temperature oxidation furnace up to 1200 °C.
+          </p>
+          <div class="exp-footer">
+            <span class="exp-status status-pending">In Review</span>
+            <span class="exp-arrow">↗</span>
+          </div>
         </div>
-    </section>
 
-<footer id="footer">
-    <div class="containter-fluid main-footerpx-0 ">
-        <div class="row text-center">
-           <div class="col-12 py-3 ">
-               Coypright&copy; <span class="text-primary">BlackCode</span> All Rights Reserved
-           </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Equipment ── -->
+  <section class="equipment" id="equipment">
+    <div class="wrapper">
+      <div class="section-header">
+        <span class="section-tag">02 / Instruments</span>
+        <h2 class="section-title">Lab Equipment</h2>
+      </div>
+
+      <div class="equip-list">
+
+        <div class="equip-item">
+          <div class="equip-num">01</div>
+          <div class="equip-info">
+            <h4>Scanning Electron Microscope</h4>
+            <p>JEOL JSM-7900F — Resolution: 0.7 nm</p>
+          </div>
+          <div class="equip-dot"></div>
         </div>
-       </div>
-</footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
+
+        <div class="equip-item">
+          <div class="equip-num">02</div>
+          <div class="equip-info">
+            <h4>X-Ray Diffractometer</h4>
+            <p>Bruker D8 Advance — Cu K-alpha source</p>
+          </div>
+          <div class="equip-dot"></div>
+        </div>
+
+        <div class="equip-item">
+          <div class="equip-num">03</div>
+          <div class="equip-info">
+            <h4>Atomic Force Microscope</h4>
+            <p>Bruker Dimension Icon — Tapping mode</p>
+          </div>
+          <div class="equip-dot"></div>
+        </div>
+
+        <div class="equip-item">
+          <div class="equip-num">04</div>
+          <div class="equip-info">
+            <h4>RF Magnetron Sputtering</h4>
+            <p>ATC Orion — 4-target carousel system</p>
+          </div>
+          <div class="equip-dot"></div>
+        </div>
+
+        <div class="equip-item">
+          <div class="equip-num">05</div>
+          <div class="equip-info">
+            <h4>Thermal Evaporator</h4>
+            <p>Angstrom Engineering EvoVac — Base 5×10⁻⁷ torr</p>
+          </div>
+          <div class="equip-dot offline"></div>
+        </div>
+
+        <div class="equip-item">
+          <div class="equip-num">06</div>
+          <div class="equip-info">
+            <h4>Dynamic Mechanical Analyzer</h4>
+            <p>TA Instruments Q800 — −150 to 600 °C</p>
+          </div>
+          <div class="equip-dot"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Team ── -->
+  <section class="team" id="team">
+    <div class="wrapper">
+      <div class="section-header">
+        <span class="section-tag">03 / People</span>
+        <h2 class="section-title">Research Team</h2>
+      </div>
+
+      <div class="team-grid">
+
+        <div class="team-card">
+          <div class="team-avatar">DR</div>
+          <div class="team-name">Dr. R. Kapoor</div>
+          <div class="team-role">Lab Director</div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">AP</div>
+          <div class="team-name">Anika Patel</div>
+          <div class="team-role">Lead Researcher</div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">MS</div>
+          <div class="team-name">Marco Silva</div>
+          <div class="team-role">Materials Engineer</div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">YL</div>
+          <div class="team-name">Yuki Liang</div>
+          <div class="team-role">PhD Candidate</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Terminal / Logs ── -->
+  <div class="wrapper" id="terminal">
+    <div class="terminal">
+      <div class="terminal-header">
+        <div class="t-dot"></div>
+        <div class="t-dot"></div>
+        <div class="t-dot"></div>
+        <span class="terminal-title">lab-mst / system-log / live</span>
+      </div>
+      <div class="terminal-body">
+        <div class="terminal-line">
+          <span class="prompt">lab@mst:~$</span>
+          <span class="cmd"> ./run_analysis --exp EXP-001 --mode full</span>
+        </div>
+        <div class="terminal-line">
+          <span class="output">  ✓ XRD scan complete — 2θ range: 20–80°, step: 0.02°</span>
+        </div>
+        <div class="terminal-line">
+          <span class="output">  ✓ Peak match: Fe₃O₄ (magnetite) @ 35.4°, 57.2°, 62.8°</span>
+        </div>
+        <div class="terminal-line">
+          <span class="output">  ✓ Crystallite size (Scherrer): 12.4 ± 0.8 nm</span>
+        </div>
+        <div class="terminal-line">
+          <span class="comment">  # SEM imaging scheduled — 09:30 tomorrow</span>
+        </div>
+        <div class="terminal-line">
+          <span class="prompt">lab@mst:~$</span>
+          <span class="cmd"> status --all</span>
+        </div>
+        <div class="terminal-line">
+          <span class="output">  ✓ SEM [ONLINE]  XRD [ONLINE]  AFM [ONLINE]  SPUTTER [ONLINE]</span>
+        </div>
+        <div class="terminal-line">
+          <span class="output">  ⚠ EVAPORATOR [OFFLINE] — scheduled maintenance 2026-03-12</span>
+        </div>
+        <div class="terminal-line">
+          <span class="prompt">lab@mst:~$</span>
+          <span class="cmd"> _</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">
+        &copy; 2026 <strong>Lab MST</strong> — Materials Science &amp; Technology
+      </div>
+      <ul class="footer-links">
+        <li><a href="#">Publications</a></li>
+        <li><a href="#">Data Portal</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Safety</a></li>
+      </ul>
+    </div>
+  </footer>
+
 </body>
-
 </html>
